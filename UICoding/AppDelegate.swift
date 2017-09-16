@@ -12,10 +12,22 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let layout = UICollectionViewFlowLayout()
+        
+        window?.rootViewController = UINavigationController(rootViewController: FeedViewController(collectionViewLayout: layout))
+        window?.makeKeyAndVisible()
+        
+        UINavigationBar.appearance().barTintColor = UIColor.FBBlue
+        application.statusBarStyle = .lightContent
+        
+        let statusBarBackgroundView = UIView()
+        statusBarBackgroundView.backgroundColor = UIColor.FBBlue
+        window?.addSubview(statusBarBackgroundView)
+        statusBarBackgroundView.anchor(top: window?.topAnchor, left: window?.leftAnchor, bottom: nil, right: window?.rightAnchor, topPadding: 0, leftPadding: 0, bottomPadding: 0, rightPadding: 0, width: 0, height: 20)
+         UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
 
