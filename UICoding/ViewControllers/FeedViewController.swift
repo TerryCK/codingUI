@@ -112,7 +112,7 @@ class FeedViewController: UICollectionViewController, UICollectionViewDelegateFl
     }()
     
     
-      let images: [UIImage] = [#imageLiteral(resourceName: "image3"),#imageLiteral(resourceName: "image2"), #imageLiteral(resourceName: "image1"), #imageLiteral(resourceName: "image4"), #imageLiteral(resourceName: "image5")]
+      let images: [UIImage] = [#imageLiteral(resourceName: "image1"), #imageLiteral(resourceName: "image2"), #imageLiteral(resourceName: "image3"), #imageLiteral(resourceName: "image4"), #imageLiteral(resourceName: "image5")]
     
     override func viewDidLoad() {
         super.viewDidLoad()

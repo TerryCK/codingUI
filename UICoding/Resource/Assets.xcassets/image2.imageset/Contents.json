@@ -2,14 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "IMG_1712.pdf"
-    },
-    {
-      "idiom" : "universal",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "image2.JPG",
       "scale" : "2x"
     },
     {
